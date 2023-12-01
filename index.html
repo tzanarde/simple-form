@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário para Vaga de Trabalho</title>
+</head>
+<body>
+    <header>
+        <h3>Cadastro para Vagas de Trabalho</h3>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h4>Formulário</h4>
+            </div>
+            <div class="form-body">
+                <form>
+                    <h1 class="form-title">Desenvolvedor Front End Pleno</h1>
+                    <p>
+                        Vaga para desenvolvedor front end de nível pleno, que possua conhecimentos em:
+                        HTML, CSS, JavaScript e React
+                    </p>
+
+                    <div class="form-box">
+                        <h2>Dados Pessoais</h2>
+                        <!-- NAME -->
+                        <div class="box-input">
+                            <label for="name">Nome completo: <span class="required-field">*</span></label>
+                            <input type="text"
+                                name="title"
+                                id="title"
+                                class="block"
+                                placeholder="Seu nome completo"
+                                minlength="1"
+                                maxlength="100"
+                                required
+                            >
+                        </div>
+
+                        <!-- BIRTHDATE -->
+                        <div class="box-input">
+                            <label for="birthdate">Data de Nascimento: <span class="required-field">*</span></label>
+                            <input type="date"
+                                    name="birthdate"
+                                    id="birthdate"
+                                    class="block"
+                                    required
+                            >
+                        </div>
+
+                        <!-- GENRE -->
+                        <div class="box-input">
+                            <label for="genre">Sexo de Nascimento: </label>
+                            <select name="genre" class="block">
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino</option>
+                                <option value="rather-not-answer" selected>Prefiro não responder</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-box">
+                        <h2>Dados de Localização</h2>
+                        <!-- COUNTRY -->
+                        <div class="box-input">
+                            <label for="country">País: </label>
+                            <input type="text"
+                                name="country"
+                                id="country"
+                                class="block"
+                                placeholder="País em que reside atualmente"
+                                minlength="1"
+                                maxlength="60"
+                            >
+                        </div>
+
+                        <!-- STATE -->
+                        <div class="box-input">
+                            <label for="state">Estado: </label>
+                            <input type="text"
+                                name="state"
+                                id="state"
+                                class="block"
+                                placeholder="Estado em que reside atualmente"
+                                minlength="1"
+                                maxlength="60"
+                            >
+                        </div>
+
+                        <!-- CITY -->
+                        <div class="box-input">
+                            <label for="city">Cidade: </label>
+                            <input type="text"
+                                name="city"
+                                id="city"
+                                class="block"
+                                placeholder="Cidade em que reside atualmente"
+                                minlength="1"
+                                maxlength="80"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-box">
+                        <h2>Experiência</h2>
+                        <!-- EXPERIENCE -->
+                        <label for="experience">Tecnologias que possui experiência: </label>
+                        <div class="box-input">
+                            <div class="technology-group">
+                                <ul>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="html">
+                                        <label for="html">HTML</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="css">
+                                        <label for="css">CSS</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="javascript">
+                                        <label for="javascript">JavaScript</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="php">
+                                        <label for="php">PHP</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="ruby">
+                                        <label for="ruby">Ruby</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="technology-group">
+                                <ul>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="python">
+                                        <label for="python">Python</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="swift-ios">
+                                        <label for="swift-ios">Swift-IOS</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="android">
+                                        <label for="android">Android</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="database">
+                                        <label for="database">Database</label>
+                                    </li>
+                                    <li class="technology-item">
+                                        <input type="checkbox" name="experience[]" id="experience" value="aws">
+                                        <label for="aws">AWS</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- EDUCATION -->
+                        <div class="box-input">
+                        <label for="education">Escolaridade: </label>
+                            <select name="education"
+                                    id="education"
+                                    class="block">
+                                <option value="high-school">Ensino Médio</option>
+                                <option value="graduation">Graduação</option>
+                                <option value="post-graduation">Pós-Graduação</option>
+                                <option value="masters-degree">Mestrado</option>
+                                <option value="doctorate-degree">Doutorado</option>
+                                <option value="post-doctoral">Pós-Doutorado</option>
+                            </select>
+                        </div>
+
+                        <!-- SIMPLE-DESCRIPTION -->
+                        <div class="box-input">
+                            <label for="simple-description">Descrição resumida sobre o candidade:</label>
+                            <textarea name="simple-description"
+                                      id="simple-description"
+                                      placeholder="Descreva resumidamente seus histórico acadêmico e profissional"
+                                      class="block"></textarea>
+                        </div>
+
+                        <!-- RESUME -->
+                        <div class="box-input">
+                            <label for="resume">Anexar currículo:</label>
+                            <input type="file" name="resume" id="resume">
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- TERMS -->
+                    <div class="box-input">
+                        <label for="terms">Você confirma que leu e aceita os termos:</label>
+                        <div class="radio-input">
+                            <div class="radio-item">
+                                <input type="radio" name="terms-yes" id="terms-yes">
+                                <label for="terms-yes">Sim</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" name="terms-no" id="terms-no">
+                                <label for="terms-no">Não</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="button-box">
+                        <input type="submit" value="Enviar" class="button-confirm">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright 2023 - Todos os Direitos Reservados</p>
+    </footer>
+</body>
+</html>
